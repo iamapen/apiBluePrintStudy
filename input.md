@@ -5,6 +5,19 @@ HOST: http://localhost/api
 テストですよ。  
 2行目。
 
+# Group ユーザ
+ユーザ系
+
+## 挨拶 [GET /hello]
+テキストを返す
+
++ Response 200 (text/plain)
+    + Body
+        ```
+        Hello World!
+        ```
+
+
 ## ユーザ登録 [POST /users]
 新規ユーザを登録する
 
