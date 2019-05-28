@@ -1,7 +1,16 @@
 yarn add aglio
-
-
-node_modules/.bin\aglio -v
+./node_modules/.bin\aglio -v
 aglio 2.3.0
 olio 1.6.3
 
+yarn add drakov
+./node_modules/.bin/drakov -f input.md --watch
+
+
+- aglio
+  - md → HTML仕様書出力
+- drakov
+  - mockサーバ
+
+
+https://www.slideshare.net/dcubeio/apiapi-blueprint
