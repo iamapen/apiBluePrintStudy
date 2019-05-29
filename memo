@@ -5,6 +5,8 @@ olio 1.6.3
 
 yarn add drakov
 ./node_modules/.bin/drakov -f input.md --watch
+curl http://localhost:3000/hello
+curl http://localhost:3000/notexist
 
 
 - aglio
