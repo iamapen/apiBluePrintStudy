@@ -17,6 +17,8 @@ curl http://localhost:3000/notexist
   - md → HTML仕様書出力
 - drakov
   - mockサーバ
+- dredd
+  - テストツール
 
 
 https://www.slideshare.net/dcubeio/apiapi-blueprint
