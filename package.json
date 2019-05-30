@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "aglio": "^2.3.0",
-    "drakov": "^1.0.4"
+    "drakov": "^1.0.4",
+    "dredd": "^11.2.4"
   }
 }
