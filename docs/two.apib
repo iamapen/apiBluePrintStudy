@@ -1,0 +1,51 @@
+FORMAT: 1A
+HOST: http://localhost
+
+# Sample App
+サンプルアプリです
+
+# Group コード値一覧
+
+## 性別
+|コード|名前|
+|------|----|
+|Male  |男性|
+|Female|女性|
+
+## ユーザ一覧を取得する [GET /users/{userId}/{?offset,limit}{#var}]
++ Parameters
+    + userId: 1 (number, required) - ユーザID
+    + offset: 0 (number, optional) - offset
+    + limit: 10 (number, optional) - limit
+
++ Request (application/json)
+    + Attributes
+        + firstName: Arare (string, required) - 名
+        + lastName: Norimaki (string, required) - 姓
+
++ Request (application/xml)
+    + Attributes
+        + fullName: Arare Norimaki (string, required) - fullname
+
++ Response 200 (application/json)
+    + Attributes (array[User]) 
+
++ Response 400
+
+# Data Structures
+
+#  User (object) - ユーザ
++ id: 1 (number, required) - ユーザID
++ firstName: Arare (string, required) - 名
++ lastName: Norimaki (string, required) - 姓
++ gender (Gender, required) - 性別
++ birthday (object, optional) - 生年月日
+    + year: 1988 (number, required) - 西暦
+    + month: 2 (number, required) - 月
+    + day: 18 (number, required) - 日
+
+# Gender (enum, fixed) - 性別
+## Members
++ Male - 男性
++ Female - 女性
+

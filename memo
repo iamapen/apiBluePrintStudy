@@ -3,6 +3,10 @@ yarn add aglio
 aglio 2.3.0
 olio 1.6.3
 
+./node_modules/.bin/aglio -i docs/one.md -o output/one.html
+./node_modules/.bin/aglio -i docs/two.apib -o output/two.html
+./node_modules/.bin/aglio -i docs2/base.md -o output/union.html
+
 yarn add drakov
 ./node_modules/.bin/drakov -f input.md --watch
 curl http://localhost:3000/hello
